@@ -609,7 +609,8 @@
     padding: 12px 20px;
 }
 .slider-thumb img {
-    width: 100%;
+    width: 80%;
+    object-fit: contain;
 }
 .seps_img {
     display: none;
