@@ -3672,3 +3672,27 @@ p {
     font-size: 20px;
     margin: 1.5rem 0;
 }
+
+.fancy-text {
+    display: flex;
+    align-items: center;
+}
+
+.fancy-text > span {
+    background: linear-gradient(100.86deg, #424C6E 26.9%, #53B9EA 95.9%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 18px;
+}
+.fancy-text::before {
+    content: '';
+    display: block;
+    width: 150px;
+    height: 2px;
+    background: linear-gradient(100.86deg, #424C6E 26.9%, #53B9EA 95.9%);
+    margin-right: 16px;
+}
