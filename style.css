@@ -2389,7 +2389,7 @@ span.more {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    padding: 110px 0 130px;
+    padding: 110px 0 0;
 }
 
 .testimonial-area .sections-title {
@@ -2842,7 +2842,7 @@ span.more {
 <!-- ============================================================== -->*/
 .footer-area {
     background: #020415;
-    padding: 0px 0 30px;
+    padding: 0;
     margin: -1px 0 0;
 }
 
@@ -2861,6 +2861,7 @@ span.more {
     font-weight: 400;
     font-family: 'Montserrat';
     text-align: left;
+    margin-top: 0;
     line-height: 1.7;
     padding-bottom: 5px;
 }
@@ -2900,7 +2901,10 @@ span.more {
 
 .footer-ico ul {
     display: inline-block;
-    padding-left: 20px;
+}
+.footer-ico ul span{
+    color: #477198;
+
 }
 
 .footer-icon ul li {
@@ -2936,17 +2940,6 @@ span.more {
     font-family: 'Montserrat';
 }
 
-.footer-ico ul li a::before {
-    position: absolute;
-    content: "";
-    top: 13px;
-    left: -27px;
-    height: 1px;
-    width: 15px;
-    background: #725AED;
-    z-index: -1;
-}
-
 .footer-ico ul li a:hover {
     color: #725AED;
 }
@@ -2956,8 +2949,8 @@ span.more {
 }
 
 .footer-title h2 {
-    font-size: 20px;
-    font-weight: 600;
+    font-size: 24px;
+    font-weight: 700;
     font-family: 'Montserrat';
     color: #FFFFFF;
     text-transform: capitalize;
@@ -3041,7 +3034,7 @@ span.more {
 }
 
 .copy-left-title h3 span {
-    color: #715AEB;
+    color: #477198;
     font-weight: 600;
 }
 
@@ -3446,9 +3439,7 @@ span.more {
     color: #fff;
     top: 3px;
     z-index: 1;
-    background-image: -moz-linear-gradient(0deg, #d1651a 0%, #c1282a 100%);
-    background: #745CEC;
-    background-image: -ms-linear-gradient(0deg, #d1651a 0%, #c1282a 100%);
+    background: linear-gradient(100.86deg, #424C6E 26.9%, #53B9EA 95.9%);
 }
 
 .top-wrap .go-top-button i {
@@ -3658,13 +3649,16 @@ div#particles .slider-thumb {
 }
 
 .new-btn {
-    border-radius: 30px;
+    border-radius: 100px;
     background: linear-gradient(100.86deg, #424C6E 26.9%, #53B9EA 95.9%);
     color: white;
     font-weight: 600;
     padding: 12px 32px;
     font-size: 18px;
     display: inline-block;
+}
+.new-btn-big {
+    padding: 16px 64px;
 }
 
 p {
