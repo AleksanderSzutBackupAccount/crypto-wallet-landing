@@ -2916,17 +2916,17 @@ span.more {
     display: inline-block;
     font-size: 15px;
     color: #fff;
-    transition: .5s;
     height: 40px;
     text-align: center;
     width: 40px;
     line-height: 42px;
     border-radius: 50px;
     background: #292C3B;
+    transition: opacity ease .3s;
 }
 
 .footer-icon ul li a:hover {
-    background: #735CEC;
+    opacity: .6;
 }
 
 .footer-ico ul li a {
