@@ -601,9 +601,9 @@ h1.bottoms {
 }
 .row.top {
     padding: 80px 0 80px;
+    border-radius: 500px;
     background: url(assets/images/tranding-5.png);
     background-repeat: no-repeat;
-    border-radius: 10px;
 }
 .single-brand-box {
     text-align: center;
