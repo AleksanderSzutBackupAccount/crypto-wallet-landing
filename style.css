@@ -3645,10 +3645,13 @@ div#particles .single-slider-box {
     max-width: 80%;
 }
 
-.testimonial-area .single-slider-box {
-    margin-bottom: 120px;
-}
+@media (min-width: 767px) {
 
+    .testimonial-area .single-slider-box {
+        margin-bottom: 120px;
+    }
+
+}
 #webcoderskull {
     position: absolute;
     left: 0;
