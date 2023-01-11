@@ -30,9 +30,16 @@
 				var defaults = {
 						meanMenuTarget: jQuery(this), // Target the current HTML markup you wish to replace
 						meanMenuContainer: '.mobile-menu-area .container', // Choose where meanmenu will be placed within the HTML
-						meanMenuClose: "X", // single character you want to represent the close menu button
+						meanMenuClose: "<svg width=\"36\" height=\"36\" viewBox=\"0 0 36 36\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n" +
+							"<path d=\"M3.41263 35.7745C2.53001 35.8258 1.66199 35.5324 0.9916 34.9561C-0.330533 33.6261 -0.330533 31.4781 0.9916 30.1481L29.942 1.1976C31.3171 -0.0891581 33.4749 -0.0176279 34.7617 1.35751C35.9253 2.60104 35.9931 4.51237 34.9205 5.83518L5.79952 34.9561C5.13778 35.5241 4.28368 35.817 3.41263 35.7745Z\" fill=\"#FF4B55\"/>\n" +
+							"<path d=\"M32.3293 35.7745C31.4348 35.7707 30.5774 35.4156 29.9423 34.7857L0.991813 5.83506C-0.233075 4.40468 -0.0665449 2.25203 1.36384 1.02703C2.64049 -0.0662508 4.5233 -0.0662508 5.79985 1.02703L34.9208 29.9775C36.2956 31.2646 36.3667 33.4226 35.0796 34.7973C35.0284 34.852 34.9755 34.9049 34.9208 34.9561C34.2077 35.5762 33.2693 35.8725 32.3293 35.7745Z\" fill=\"#FF4B55\"/>\n" +
+							"</svg>\n", // single character you want to represent the close menu button
 						meanMenuCloseSize: "18px", // set font size of close button
-						meanMenuOpen: "<span /><span /><span />", // text/markup you want when menu is closed
+						meanMenuOpen: "<svg width=\"36\" height=\"36\" viewBox=\"0 0 36 36\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n" +
+							"<path d=\"M32.625 9H3.375C2.13244 9 1.125 7.99256 1.125 6.75C1.125 5.50744 2.13244 4.5 3.375 4.5H32.625C33.8676 4.5 34.875 5.50744 34.875 6.75C34.875 7.99256 33.8676 9 32.625 9Z\" fill=\"white\"/>\n" +
+							"<path d=\"M32.625 31.5H3.375C2.13244 31.5 1.125 30.4926 1.125 29.25C1.125 28.0074 2.13244 27 3.375 27H32.625C33.8676 27 34.875 28.0074 34.875 29.25C34.875 30.4926 33.8676 31.5 32.625 31.5Z\" fill=\"white\"/>\n" +
+							"<path d=\"M32.625 20.25H3.375C2.13244 20.25 1.125 19.2426 1.125 18C1.125 16.7574 2.13244 15.75 3.375 15.75H32.625C33.8676 15.75 34.875 16.7574 34.875 18C34.875 19.2426 33.8676 20.25 32.625 20.25Z\" fill=\"white\"/>\n" +
+							"</svg>\n", // text/markup you want when menu is closed
 						meanRevealPosition: "right", // left right or center positions
 						meanRevealPositionDistance: "0", // Tweak the position of the menu
 						meanRevealColour: "", // override CSS colours for the reveal background
@@ -91,13 +98,6 @@
 								var meanCenter = ( (newWidth/2)-22 )+"px";
 								meanRevealPos = "left:" + meanCenter + ";right:auto;";
 
-								if (!isMobile) {
-									jQuery('.meanmenu-reveal').css("left",meanCenter);
-								} else {
-									jQuery('.meanmenu-reveal').animate({
-											left: meanCenter
-									});
-								}
 							}
 						};
 
@@ -138,7 +138,7 @@
 
 						// navigation reveal
 						var showMeanMenu = function() {
-								var meanStyles = "background:"+meanRevealColour+";color:"+meanRevealColour+";"+meanRevealPos;
+								var meanStyles = "text-align: center; text-indent: 0px; font-size: 18px;";
 								if (currentWidth <= meanScreenWidth) {
 								jQuery(removeElements).addClass('mean-remove');
 									meanMenuExist = true;
