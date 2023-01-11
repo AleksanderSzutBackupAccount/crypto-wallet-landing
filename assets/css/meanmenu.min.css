@@ -242,6 +242,10 @@ a.meanmenu-reveal {
 .mean-container .mean-bar::before {
     content: "";
     width: 222px;
+    max-width: 50vw;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
     height: 50px;
     display: block;
     background-image: url("/assets/images/logo.svg");

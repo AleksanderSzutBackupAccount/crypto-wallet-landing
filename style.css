@@ -686,6 +686,7 @@ h1.bottoms {
 <!-- ============================================================== -->*/
 .brand-area {
     position: relative;
+    margin: 0 24px;
     top: -106px;
 }
 
@@ -710,7 +711,8 @@ h1.bottoms {
 }
 
 .single-about-box {
-    margin-bottom: 30px;
+    width: 80%;
+    margin: 40px 10%;
 }
 
 .about-thumb {
@@ -722,10 +724,13 @@ h1.bottoms {
 }
 
 .about-tmb img {
-    float: left;
     margin-right: 10px;
 }
 
+.about-titles {
+    display: flex;
+    align-items: center;
+}
 .about-titles h4 {
     font-size: 16px;
     font-weight: 500;
@@ -738,6 +743,8 @@ h1.bottoms {
 
 .about-tmb {
     margin: 36px 0 -3px;
+    display: flex;
+    flex-wrap: nowrap;
 }
 
 .about-button {
@@ -2320,6 +2327,11 @@ span.more {
     border-radius: 7px;
     position: relative;
     z-index: 1;
+}
+
+.mockup {
+    max-width: 90vw;
+    object-fit: contain;
 }
 
 .single-feature-box::before {

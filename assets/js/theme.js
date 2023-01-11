@@ -69,14 +69,17 @@
     $('.brand_list').owlCarousel({
         loop: true,
         autoplay: true,
-        autoplayTimeout: 10000,
+        autoplayTimeout: 3000,
         dots: false,
         dotsEach:false,
         nav: false,
         navText: ["<i class='fa fa-long-arrow-left''></i>", "<i class='fa fa-long-arrow-right''></i>"],
         responsive: {
             0: {
-                items: 2
+                items: 1
+            },
+            350: {
+                items: 2,
             },
             768: {
                 items: 3
