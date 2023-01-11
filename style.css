@@ -731,6 +731,7 @@ h1.bottoms {
     display: flex;
     align-items: center;
 }
+
 .about-titles h4 {
     font-size: 16px;
     font-weight: 500;
@@ -2914,7 +2915,8 @@ span.more {
 .footer-ico ul {
     display: inline-block;
 }
-.footer-ico ul span{
+
+.footer-ico ul span {
     color: #477198;
 
 }
@@ -3637,6 +3639,16 @@ div#particles .single-slider-box {
     text-align: left;
 }
 
+.respo-img {
+    width: 450px;
+    margin: 0 10%;
+    max-width: 80%;
+}
+
+.testimonial-area .single-slider-box {
+    margin-bottom: 120px;
+}
+
 #webcoderskull {
     position: absolute;
     left: 0;
@@ -3669,6 +3681,7 @@ div#particles .slider-thumb {
     font-size: 18px;
     display: inline-block;
 }
+
 .new-btn-big {
     padding: 16px 64px;
 }
@@ -3694,6 +3707,7 @@ p {
     font-weight: 600;
     font-size: 18px;
 }
+
 .fancy-text::before {
     content: '';
     display: block;

@@ -136,7 +136,7 @@
     padding: 70px 0 50px;
 }
 .testimonial-area {
-    padding: 50px 0 100px;
+    padding: 50px 0 0 0;
 }
 .slider-title h1 {
     font-size: 35px;
@@ -306,7 +306,7 @@
     font-size: 12px;
 }
 .testimonial-area {
-    padding: 60px 0 80px;
+    padding: 60px 0 0;
 }
 .call-shap {
     left: 80px;
@@ -490,7 +490,7 @@
     padding: 50px 0 50px;
 }
 .testimonial-area {
-    padding: 50px 0 50px;
+    padding: 50px 0 0;
 }
 .single-call-do-box {
     top: 0;
@@ -924,3 +924,9 @@ header.main-header {
 
 }
 
+@media (min-width: 767px) {
+    .respo-img {
+        margin: 0;
+        max-width: 100%;
+    }
+}
