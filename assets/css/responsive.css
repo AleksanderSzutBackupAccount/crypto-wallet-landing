@@ -638,7 +638,7 @@
     height: auto;
     margin: 48px 0;
     object-position: center;
-    transform: translate(-30%) !important;
+    transform: translate(-20%) !important;
     object-fit: contain;
 }
 .seps_img {
